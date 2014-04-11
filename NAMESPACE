@@ -1,0 +1,9 @@
+exportPattern("^[[:alpha:]]+")
+
+useDynLib(anominate)
+import(wnominate, MCMCpack, pscl, oc)
+
+S3method(plot,anominate)
+S3method(summary,anominate)
+
+
