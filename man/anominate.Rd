@@ -24,7 +24,7 @@ anominate(rcObject, dims=1, nsamp=1000, thin=1, burnin=500, minvotes=20,
   \item{polarity}{A vector specifying the row number of the legislator(s) constrained to have a positive (i.e., right-wing or conservative) score on each dimension}
   \item{random.starts}{If \code{TRUE}, initial values for the legislator and bill parameters are randomly drawn from a uniform distribution. If \code{FALSE}, the W-NOMINATE estimates are used as the initial values}
   \item{verbose}{If \code{TRUE}, the progress of the sampler at each 100th iteration is printed to the screen}
-  \item{constrain}{If \code{FALSE}, this constrains alpha=1 and does not estimate it.}
+  \item{constrain}{If \code{TRUE}, this constrains alpha=1 and does not estimate it. This option should be used if more than one dimension is being estimated, which makes the method equivalent to a Bayesian implementation of Poole and Rosenthal's (1997) NOMINATE model.}
 }
 
 \value{
@@ -39,7 +39,8 @@ A list with the following elements:
 
 \references{
 Carroll, Royce, Jeffrey B. Lewis, James Lo, Keith T. Poole and Howard Rosenthal. 2013. ``The Structure of Utility in Spatial Models of Voting.'' \emph{American Journal of Political Science} 57(4): 1008--1028.
-}
+
+Poole, Keith T. and Howard Rosenthal. 1997. \emph{Congress: A Political-Economic History of Roll Call Voting}. New York: Oxford University Press.}
 
 
 \author{
