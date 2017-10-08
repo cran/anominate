@@ -52,14 +52,12 @@
 
 \source{
   Keith Poole. 2014. \emph{111th Senate Roll Call Vote Data}.
-  \url{http://www.voteview.com/}.
+  \url{http://www.k7moa.com/}.
 }
 
 \references{
-  Carroll, Royce, Jeffrey B. Lewis, James Lo, Keith T. Poole and Howard Rosenthal. 2013. ``The Structure of
-  Utility in Spatial Models of Voting.'' American Journal of Political Science 57(4): 1008--1028.
+Carroll, Royce, Jeffrey B. Lewis, James Lo, Keith T. Poole and Howard Rosenthal. 2013. ``The Structure of Utility in Spatial Models of Voting.'' \emph{American Journal of Political Science} 57(4): 1008--1028.
 }
-
 
 \author{
 Christopher Hare, Royce Carroll, Jeffrey B. Lewis, James Lo, Keith T. Poole and Howard Rosenthal
@@ -71,22 +69,7 @@ Christopher Hare, Royce Carroll, Jeffrey B. Lewis, James Lo, Keith T. Poole and 
 
 
 \examples{
-
 data(sen111)
-
-### This command conducts estimates, which we instead load using data()
-#sen111_anom <- anominate(sen111, dims=1, polarity=2, nsamp=200, thin=1, 
-#	burnin=100, random.starts=FALSE, verbose=TRUE)
-
-data(sen111_anom)
-
-summary(sen111_anom)
-
-## Graphical summaries
-plot(sen111_anom)
-densplot.anominate(sen111_anom)
-traceplot.anominate(sen111_anom)
-
 }
 
 \keyword{ideal point estimation, NOMINATE, Bayesian latent variable models}

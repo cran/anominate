@@ -29,20 +29,27 @@ data(norm_anom)
 Carroll, Royce, Jeffrey B. Lewis, James Lo, Keith T. Poole and Howard Rosenthal. 2013. ``The Structure of Utility in Spatial Models of Voting.'' \emph{American Journal of Political Science} 57(4): 1008--1028.
 }
 
-
 \author{
 Christopher Hare, Royce Carroll, Jeffrey B. Lewis, James Lo, Keith T. Poole and Howard Rosenthal
 }
 
+
 \examples{
 
+\dontshow{
 normal.data <- anominate.sim(utility="normal") 
-### This command conducts estimates, which we instead load using data()
-#norm_anom <- anominate(normal.data, dims=1, polarity=2, nsamp=200, thin=1, 
-#	burnin=100, random.starts=FALSE, verbose=TRUE)
 data(norm_anom)
 summary(norm_anom)
+}
+
+\dontrun{
+normal.data <- anominate.sim(utility="normal") 
+norm_anom <- anominate(normal.data, dims=1, polarity=2, nsamp=200, thin=1, 
+	burnin=100, random.starts=FALSE, verbose=TRUE)
+summary(norm_anom)
+}
 
 }
+
 
 \keyword{ideal point estimation, NOMINATE, Bayesian latent variable models}

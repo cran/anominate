@@ -40,7 +40,8 @@ A list with the following elements:
 \references{
 Carroll, Royce, Jeffrey B. Lewis, James Lo, Keith T. Poole and Howard Rosenthal. 2013. ``The Structure of Utility in Spatial Models of Voting.'' \emph{American Journal of Political Science} 57(4): 1008--1028.
 
-Poole, Keith T. and Howard Rosenthal. 1997. \emph{Congress: A Political-Economic History of Roll Call Voting}. New York: Oxford University Press.}
+Poole, Keith T. and Howard Rosenthal. 1997. \emph{Congress: A Political-Economic History of Roll Call Voting}. New York: Oxford University Press.
+}
 
 
 \author{
@@ -52,22 +53,26 @@ Christopher Hare, Royce Carroll, Jeffrey B. Lewis, James Lo, Keith T. Poole and 
 }
 
 
+
+
 \examples{
 
+\dontshow{
 data(sen111)
-
-### This command conducts estimates, which we instead load using data()
-#sen111_anom <- anominate(sen111, dims=1, polarity=2, nsamp=200, thin=1,
-#	 burnin=100, random.starts=FALSE, verbose=TRUE)
-
 data(sen111_anom)
-
 summary(sen111_anom)
+}
 
+\dontrun{
+data(sen111)
+sen111_anom <- anominate(sen111, dims=1, polarity=2, nsamp=200, thin=1,
+	burnin=100, random.starts=FALSE, verbose=TRUE)
+summary(sen111_anom)
 ## Graphical summaries
 plot(sen111_anom)
 densplot.anominate(sen111_anom)
 traceplot.anominate(sen111_anom)
+}
 
 }
 

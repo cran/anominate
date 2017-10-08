@@ -316,8 +316,7 @@ for (i in 1:dims){
 }
 
 
-anominate.sim <- function(nvotes=500, nlegis=101, seed=123345, utility="normal") 
-{
+anominate.sim <- function(nvotes=500, nlegis=101, seed=123345, utility="normal"){
 
   if(utility !="normal" | utility!="quadratic") cat("\n Utility must be 'normal' or 'quadratic'")
     

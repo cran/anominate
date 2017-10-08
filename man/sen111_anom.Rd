@@ -35,22 +35,7 @@ Christopher Hare, Royce Carroll, Jeffrey B. Lewis, James Lo, Keith T. Poole and 
 }
 
 \examples{
-
-data(sen111)
-
-### This command conducts estimates, which we instead load using data()
-#sen111_anom <- anominate(sen111, dims=1, polarity=2, nsamp=200, thin=1, 
-#	burnin=100, random.starts=FALSE, verbose=TRUE)
-
 data(sen111_anom)
-
-summary(sen111_anom)
-
-## Graphical summaries
-plot(sen111_anom)
-densplot.anominate(sen111_anom)
-traceplot.anominate(sen111_anom)
-
 }
 
 \keyword{ideal point estimation, NOMINATE, Bayesian latent variable models}

@@ -34,14 +34,21 @@ Carroll, Royce, Jeffrey B. Lewis, James Lo, Keith T. Poole and Howard Rosenthal.
 Christopher Hare, Royce Carroll, Jeffrey B. Lewis, James Lo, Keith T. Poole and Howard Rosenthal
 }
 
+
 \examples{
 
+\dontshow{
 quadratic.data <- anominate.sim(utility="quadratic") 
-### This command conducts estimates, which we instead load using data()
-#quad_anom <- anominate(quadratic.data, dims=1, polarity=2, nsamp=200, thin=1, 
-#	burnin=100, random.starts=FALSE, verbose=TRUE)
 data(quad_anom)
 summary(quad_anom)
+}
+
+\dontrun{
+quadratic.data <- anominate.sim(utility="quadratic") 
+quad_anom <- anominate(quadratic.data, dims=1, polarity=2, nsamp=200, thin=1, 
+	burnin=100, random.starts=FALSE, verbose=TRUE)
+summary(quad_anom)
+}
 
 }
 

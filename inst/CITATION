@@ -1,19 +1,19 @@
 citHeader("To cite 'anominate' in publications use:")
 
 citEntry(entry = "Manual",
-  title        = "alpha-NOMINATE: Ideal Point Estimator",
+  title        = "Alpha-NOMINATE: Ideal Point Estimator",
   author       = personList(as.person("Royce Carroll"),
                    as.person("Christopher Hare"),
                    as.person("Jeffrey B. Lewis"),
                    as.person("James Lo"),
                    as.person("Keith T. Poole"),
 		   as.person("Howard Rosenthal")),
-  year         = "2014",
-  note	       = "R package version 0.4",
+  year         = "2017",
+  note	       = "R package version 0.6",
 
   textVersion  =
-  paste("Royce Carroll, Christopher Hare, Jeffrey B. Lewis, James Lo, Keith T. Poole and Howard Rosenthal (2014).",
-        "alpha-NOMINATE: Ideal Point Estimator.",
-        "R package version 0.4. URL http://www.voteview.com/alphanominate.asp")
+  paste("Royce Carroll, Christopher Hare, Jeffrey B. Lewis, James Lo, Keith T. Poole and Howard Rosenthal (2017).",
+        "Alpha-NOMINATE: Ideal Point Estimator.",
+        "R package version 0.6. URL http://k7moa.com/alphanominate.htm")
 )
 
